@@ -1,9 +1,9 @@
-## Allows creation of a matrix that can cachce its own inverse
-## This caching can save costly computation timee if the matrix
+## Allows creation of a matrix that can cache its own inverse.
+## This caching can save costly computation time if the matrix
 ## is repeatedly attemting to compute its inverse.
 
 ## Takes a matrix and creates a list that allows the matrix
-## to be retrieved or updated.  The list also provides the ability
+## to be retrieved and/or updated.  The list also provides the ability
 ## to retrieve or set the matrix's inverse.
 
 makeCacheMatrix <- function(x = matrix()) {
@@ -27,7 +27,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Creates inverse of matrix.  If inverse has been previously calculated,
-## returns cached inverse value.
+## returns cached inverse matrix.
 
 cacheSolve <- function(x, ...) {
     ## Return a matrix that is the inverse of 'x'
